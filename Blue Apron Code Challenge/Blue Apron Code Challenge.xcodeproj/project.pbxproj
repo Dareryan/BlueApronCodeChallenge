@@ -15,7 +15,7 @@
 		45A3302D1C4435C900E7430A /* ForecastLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3302C1C4435C900E7430A /* ForecastLocationManager.swift */; };
 		45A3302F1C44387C00E7430A /* OpenWeatherMapAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3302E1C44387C00E7430A /* OpenWeatherMapAPIClient.swift */; };
 		45A330311C443A5400E7430A /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A330301C443A5400E7430A /* Forecast.swift */; };
-		45E38FEC1C44421500E2814C /* ForecastTableViewCelll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E38FEB1C44421500E2814C /* ForecastTableViewCelll.xib */; };
+		45E38FEC1C44421500E2814C /* ForecastTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E38FEB1C44421500E2814C /* ForecastTableViewCell.xib */; };
 		45E38FEE1C44421E00E2814C /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E38FED1C44421E00E2814C /* ForecastTableViewCell.swift */; };
 		45E390021C4442E200E2814C /* 01d.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E38FF01C4442E200E2814C /* 01d.png */; };
 		45E390031C4442E200E2814C /* 01n.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E38FF11C4442E200E2814C /* 01n.png */; };
@@ -35,6 +35,7 @@
 		45E390111C4442E200E2814C /* 13n.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E38FFF1C4442E200E2814C /* 13n.png */; };
 		45E390121C4442E200E2814C /* 50d.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E390001C4442E200E2814C /* 50d.png */; };
 		45E390131C4442E200E2814C /* 50n.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E390011C4442E200E2814C /* 50n.png */; };
+		45E390151C44433E00E2814C /* ForecastDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E390141C44433E00E2814C /* ForecastDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +49,7 @@
 		45A3302C1C4435C900E7430A /* ForecastLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastLocationManager.swift; sourceTree = "<group>"; };
 		45A3302E1C44387C00E7430A /* OpenWeatherMapAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapAPIClient.swift; sourceTree = "<group>"; };
 		45A330301C443A5400E7430A /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
-		45E38FEB1C44421500E2814C /* ForecastTableViewCelll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastTableViewCelll.xib; sourceTree = "<group>"; };
+		45E38FEB1C44421500E2814C /* ForecastTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastTableViewCell.xib; sourceTree = "<group>"; };
 		45E38FED1C44421E00E2814C /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
 		45E38FF01C4442E200E2814C /* 01d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01d.png; sourceTree = "<group>"; };
 		45E38FF11C4442E200E2814C /* 01n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01n.png; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		45E38FFF1C4442E200E2814C /* 13n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13n.png; sourceTree = "<group>"; };
 		45E390001C4442E200E2814C /* 50d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50d.png; sourceTree = "<group>"; };
 		45E390011C4442E200E2814C /* 50n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50n.png; sourceTree = "<group>"; };
+		45E390141C44433E00E2814C /* ForecastDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,11 +104,12 @@
 			children = (
 				45A330181C44345400E7430A /* AppDelegate.swift */,
 				45A3302E1C44387C00E7430A /* OpenWeatherMapAPIClient.swift */,
+				45E390141C44433E00E2814C /* ForecastDataSource.swift */,
 				45A330301C443A5400E7430A /* Forecast.swift */,
 				45A3302C1C4435C900E7430A /* ForecastLocationManager.swift */,
 				45A3302A1C44354200E7430A /* ForecastsTableViewController.swift */,
 				45E38FED1C44421E00E2814C /* ForecastTableViewCell.swift */,
-				45E38FEB1C44421500E2814C /* ForecastTableViewCelll.xib */,
+				45E38FEB1C44421500E2814C /* ForecastTableViewCell.xib */,
 				45A3301C1C44345400E7430A /* Main.storyboard */,
 				45E38FEF1C4442C200E2814C /* ForecastIcons */,
 				45A3301F1C44345400E7430A /* Assets.xcassets */,
@@ -206,7 +209,7 @@
 				45E390021C4442E200E2814C /* 01d.png in Resources */,
 				45E390051C4442E200E2814C /* 02n.png in Resources */,
 				45E3900E1C4442E200E2814C /* 11d.png in Resources */,
-				45E38FEC1C44421500E2814C /* ForecastTableViewCelll.xib in Resources */,
+				45E38FEC1C44421500E2814C /* ForecastTableViewCell.xib in Resources */,
 				45E390111C4442E200E2814C /* 13n.png in Resources */,
 				45E390121C4442E200E2814C /* 50d.png in Resources */,
 				45E390031C4442E200E2814C /* 01n.png in Resources */,
@@ -235,6 +238,7 @@
 				45A3302B1C44354200E7430A /* ForecastsTableViewController.swift in Sources */,
 				45A3302F1C44387C00E7430A /* OpenWeatherMapAPIClient.swift in Sources */,
 				45A3302D1C4435C900E7430A /* ForecastLocationManager.swift in Sources */,
+				45E390151C44433E00E2814C /* ForecastDataSource.swift in Sources */,
 				45A330191C44345400E7430A /* AppDelegate.swift in Sources */,
 				45A330311C443A5400E7430A /* Forecast.swift in Sources */,
 			);
