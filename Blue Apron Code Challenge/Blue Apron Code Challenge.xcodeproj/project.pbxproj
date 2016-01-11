@@ -12,6 +12,7 @@
 		45A330201C44345400E7430A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45A3301F1C44345400E7430A /* Assets.xcassets */; };
 		45A330231C44345400E7430A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A330211C44345400E7430A /* LaunchScreen.storyboard */; };
 		45A3302B1C44354200E7430A /* ForecastsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3302A1C44354200E7430A /* ForecastsTableViewController.swift */; };
+		45A3302D1C4435C900E7430A /* ForecastLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3302C1C4435C900E7430A /* ForecastLocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		45A330221C44345400E7430A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45A330241C44345400E7430A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45A3302A1C44354200E7430A /* ForecastsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastsTableViewController.swift; sourceTree = "<group>"; };
+		45A3302C1C4435C900E7430A /* ForecastLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastLocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				45A330181C44345400E7430A /* AppDelegate.swift */,
+				45A3302C1C4435C900E7430A /* ForecastLocationManager.swift */,
 				45A3302A1C44354200E7430A /* ForecastsTableViewController.swift */,
 				45A3301C1C44345400E7430A /* Main.storyboard */,
 				45A3301F1C44345400E7430A /* Assets.xcassets */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45A3302B1C44354200E7430A /* ForecastsTableViewController.swift in Sources */,
+				45A3302D1C4435C900E7430A /* ForecastLocationManager.swift in Sources */,
 				45A330191C44345400E7430A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
