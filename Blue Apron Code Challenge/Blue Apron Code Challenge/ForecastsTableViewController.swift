@@ -10,13 +10,19 @@ import UIKit
 
 class ForecastsTableViewController: UITableViewController, ForecastDataSourceDelegate {
    
+   // MARK: - instance variables 
+   
    let dataSource = ForecastDataSource()
+   
+   // MARK: - view lifecycle
    
    override func viewDidLoad() {
       super.viewDidLoad()
       setupTableView()
       setupDataSource()
    }
+   
+   // MARK: - setup
    
    func setupTableView() {
       tableView.registerNib(UINib(nibName: "ForecastTableViewCell", bundle: nil), forCellReuseIdentifier: ForecastTableViewCell.reuseIdentifier())
@@ -27,7 +33,7 @@ class ForecastsTableViewController: UITableViewController, ForecastDataSourceDel
       dataSource.reload()
    }
    
-   // MARK: - Table view data source
+   // MARK: - table view data source
    
    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
       return dataSource.numberOfSections()
@@ -35,12 +41,6 @@ class ForecastsTableViewController: UITableViewController, ForecastDataSourceDel
    
    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       return dataSource.numberOfRowsInSection(section)
-   }
-   
-   func forecastDataSourceDidLoad(dataSource: ForecastDataSource) {
-      dispatch_async(dispatch_get_main_queue()) { () -> Void in
-         self.tableView.reloadData()
-      }
    }
    
    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -70,8 +70,18 @@ class ForecastsTableViewController: UITableViewController, ForecastDataSourceDel
       return cell
    }
    
+   // MARK: - table view delegate
+   
    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
       return ForecastTableViewCell.cellHeight()
+   }
+   
+   // MARK: - forecast data source
+   
+   func forecastDataSourceDidLoad(dataSource: ForecastDataSource) {
+      dispatch_async(dispatch_get_main_queue()) { () -> Void in
+         self.tableView.reloadData()
+      }
    }
    
 }
