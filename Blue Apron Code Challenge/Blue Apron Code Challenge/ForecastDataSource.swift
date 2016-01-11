@@ -113,7 +113,7 @@ class ForecastDataSource: NSObject, ForecastLocationManagerDelegate {
    }
    
    func generateForecastTimeStamp(forecastDate: NSDate) -> String {
-      forecastTimeFormatter.dateFormat = "hh:mm a"
+      forecastTimeFormatter.dateFormat = "h:mm a"
       return forecastTimeFormatter.stringFromDate(forecastDate)
    }
    
