@@ -30,6 +30,8 @@ class ForecastTableViewCell: UITableViewCell {
       lowTempLabel.text = low
    }
    
+   //MARK: accessors
+   
    class func cellHeight() -> CGFloat {
       return 90.0
    }
