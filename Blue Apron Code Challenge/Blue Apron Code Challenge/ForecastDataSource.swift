@@ -34,12 +34,18 @@ class ForecastDataSource: NSObject, ForecastLocationManagerDelegate {
    override init() {
       super.init()
       setupLocationManager()
+      setupDateFormatters()
    }
    
    //MARK: setup
    
    func setupLocationManager() {
       locationManager.delegate = self;
+   }
+   
+   func setupDateFormatters() {
+      forecastDateFormatter.dateFormat = "MMMM dd"
+      forecastTimeFormatter.dateFormat = "h:mm a"
    }
    
    //MARK: imperatives
@@ -113,12 +119,10 @@ class ForecastDataSource: NSObject, ForecastLocationManagerDelegate {
    }
    
    func generateForecastDateKey(forecastDate: NSDate) -> String {
-      forecastDateFormatter.dateFormat = "MMMM dd"
       return forecastDateFormatter.stringFromDate(forecastDate)
    }
    
    func generateForecastTimeStamp(forecastDate: NSDate) -> String {
-      forecastTimeFormatter.dateFormat = "h:mm a"
       return forecastTimeFormatter.stringFromDate(forecastDate)
    }
    
