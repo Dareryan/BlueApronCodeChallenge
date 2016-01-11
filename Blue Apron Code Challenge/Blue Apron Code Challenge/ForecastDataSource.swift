@@ -23,8 +23,8 @@ class ForecastDataSource: NSObject, ForecastLocationManagerDelegate {
    let locationManager = ForecastLocationManager()
    var delegate:ForecastDataSourceDelegate?
    /*
-   forecastDateFormatter is accessed from a closure of an asychronous method.
    Maintaining two NSDateFormatters should prevent issues with thread safety if a refresh controller is added to the tableview in the future.
+   forecastDateFormatter is accessed from a closure of an asychronous method and forecastTimeFormatter is accessed exclusively on the main thread to update table view cell UIElements.
    */
    let forecastDateFormatter = NSDateFormatter()
    let forecastTimeFormatter = NSDateFormatter()
