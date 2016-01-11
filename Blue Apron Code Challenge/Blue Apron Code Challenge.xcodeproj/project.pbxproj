@@ -104,16 +104,16 @@
 			children = (
 				45A330181C44345400E7430A /* AppDelegate.swift */,
 				45A3302E1C44387C00E7430A /* OpenWeatherMapAPIClient.swift */,
-				45E390141C44433E00E2814C /* ForecastDataSource.swift */,
 				45A330301C443A5400E7430A /* Forecast.swift */,
+				45E390141C44433E00E2814C /* ForecastDataSource.swift */,
 				45A3302C1C4435C900E7430A /* ForecastLocationManager.swift */,
-				45A3302A1C44354200E7430A /* ForecastsTableViewController.swift */,
 				45E38FED1C44421E00E2814C /* ForecastTableViewCell.swift */,
-				45E38FEB1C44421500E2814C /* ForecastTableViewCell.xib */,
-				45A3301C1C44345400E7430A /* Main.storyboard */,
+				45A3302A1C44354200E7430A /* ForecastsTableViewController.swift */,
 				45E38FEF1C4442C200E2814C /* ForecastIcons */,
 				45A3301F1C44345400E7430A /* Assets.xcassets */,
+				45E38FEB1C44421500E2814C /* ForecastTableViewCell.xib */,
 				45A330211C44345400E7430A /* LaunchScreen.storyboard */,
+				45A3301C1C44345400E7430A /* Main.storyboard */,
 				45A330241C44345400E7430A /* Info.plist */,
 			);
 			path = "Blue Apron Code Challenge";
