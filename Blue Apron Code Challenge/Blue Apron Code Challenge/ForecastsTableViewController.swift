@@ -76,6 +76,11 @@ class ForecastsTableViewController: UITableViewController, ForecastDataSourceDel
       return ForecastTableViewCell.cellHeight()
    }
    
+   override func tableView(tableView: UITableView, shouldHighlightRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+      //Disable cell selection 
+      return false
+   }
+   
    // MARK: - forecast data source
    
    func forecastDataSourceDidLoad(dataSource: ForecastDataSource) {
