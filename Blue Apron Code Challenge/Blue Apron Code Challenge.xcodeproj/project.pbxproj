@@ -15,6 +15,8 @@
 		45A3302D1C4435C900E7430A /* ForecastLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3302C1C4435C900E7430A /* ForecastLocationManager.swift */; };
 		45A3302F1C44387C00E7430A /* OpenWeatherMapAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3302E1C44387C00E7430A /* OpenWeatherMapAPIClient.swift */; };
 		45A330311C443A5400E7430A /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A330301C443A5400E7430A /* Forecast.swift */; };
+		45E38FEC1C44421500E2814C /* ForecastTableViewCelll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E38FEB1C44421500E2814C /* ForecastTableViewCelll.xib */; };
+		45E38FEE1C44421E00E2814C /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E38FED1C44421E00E2814C /* ForecastTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		45A3302C1C4435C900E7430A /* ForecastLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastLocationManager.swift; sourceTree = "<group>"; };
 		45A3302E1C44387C00E7430A /* OpenWeatherMapAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapAPIClient.swift; sourceTree = "<group>"; };
 		45A330301C443A5400E7430A /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		45E38FEB1C44421500E2814C /* ForecastTableViewCelll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastTableViewCelll.xib; sourceTree = "<group>"; };
+		45E38FED1C44421E00E2814C /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				45A330301C443A5400E7430A /* Forecast.swift */,
 				45A3302C1C4435C900E7430A /* ForecastLocationManager.swift */,
 				45A3302A1C44354200E7430A /* ForecastsTableViewController.swift */,
+				45E38FED1C44421E00E2814C /* ForecastTableViewCell.swift */,
+				45E38FEB1C44421500E2814C /* ForecastTableViewCelll.xib */,
 				45A3301C1C44345400E7430A /* Main.storyboard */,
 				45A3301F1C44345400E7430A /* Assets.xcassets */,
 				45A330211C44345400E7430A /* LaunchScreen.storyboard */,
@@ -132,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45A330231C44345400E7430A /* LaunchScreen.storyboard in Resources */,
+				45E38FEC1C44421500E2814C /* ForecastTableViewCelll.xib in Resources */,
 				45A330201C44345400E7430A /* Assets.xcassets in Resources */,
 				45A3301E1C44345400E7430A /* Main.storyboard in Resources */,
 			);
@@ -144,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E38FEE1C44421E00E2814C /* ForecastTableViewCell.swift in Sources */,
 				45A3302B1C44354200E7430A /* ForecastsTableViewController.swift in Sources */,
 				45A3302F1C44387C00E7430A /* OpenWeatherMapAPIClient.swift in Sources */,
 				45A3302D1C4435C900E7430A /* ForecastLocationManager.swift in Sources */,
@@ -296,6 +304,7 @@
 				45A330291C44345400E7430A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
