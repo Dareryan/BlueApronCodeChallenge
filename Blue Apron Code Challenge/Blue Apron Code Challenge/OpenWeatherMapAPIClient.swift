@@ -16,7 +16,7 @@ struct APIConstants {
 
 class OpenWeatherMapAPIClient: NSObject {
    
-   class func forcastForLocation(location: CLLocation, completion:(NSArray?, String?, NSError?) -> Void) {
+   class func forcastForLocation(location: CLLocation, completion:(forecast: NSArray?,city: String?,error: NSError?) -> Void) {
       let forecastURLPath = "/data/2.5/forecast"
       let forecastURLParameters = "?lat=\(location.coordinate.latitude)&lon=\(location.coordinate.longitude)&units=imperial&APPID=\(APIConstants.OpenWeatherMapAPIKey)"
       //Append path and parameters to base URL
@@ -27,7 +27,7 @@ class OpenWeatherMapAPIClient: NSObject {
          
          guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
             print("error getting meetups: \(error)")
-            completion(nil, nil, error)
+            completion(forecast: nil, city: nil, error: error)
             return
          }
          
@@ -42,10 +42,10 @@ class OpenWeatherMapAPIClient: NSObject {
             
             let forecastArray = responseDictionary["list"] as? NSArray
             
-            completion(forecastArray, cityName, nil)
+            completion(forecast: forecastArray, city: cityName, error: nil)
          }catch let serializationError as NSError {
             print("error serializing JSON: \(serializationError)")
-            completion(nil, nil, serializationError)
+            completion(forecast: nil, city: nil, error: serializationError)
          }
       }.resume();
    }
