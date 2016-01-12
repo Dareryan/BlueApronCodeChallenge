@@ -77,6 +77,12 @@ class ForecastDataSource: NSObject, ForecastLocationManagerDelegate {
       }
    }
    
+   //MARK: location manager delegate
+   
+   func locationManagerDidUpdateLocation(sender: ForecastLocationManager, location: CLLocation) {
+      getForecastForLocation(location)
+   }
+   
    //MARK: accessors
    
    func titleForSection(section: Int) -> String {
@@ -95,10 +101,6 @@ class ForecastDataSource: NSObject, ForecastLocationManagerDelegate {
    func numberOfRowsInSection(section: Int) -> Int {
       let key = sectionKeys[section]
       return forecastDateDictionary[key]!.count
-   }
-   
-   func locationManagerDidUpdateLocation(sender: ForecastLocationManager, location: CLLocation) {
-      getForecastForLocation(location)
    }
    
    //MARK: factories
